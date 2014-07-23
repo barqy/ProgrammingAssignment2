@@ -56,9 +56,7 @@ cacheSolve <- function(X, ...) {
                 return(invX)
         }
         mat <- X$get()
-        invX <- solve(mat)
+        invX <- solve(mat,...)
         X$setInv(invX)
         invX
 }
-
-
